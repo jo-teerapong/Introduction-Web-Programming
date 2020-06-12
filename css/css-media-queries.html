@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <!-- <style>
+        /* .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: column wrap;
+            float: left;
+            width: 100%; 
+        } */
+        /* .row {
+            width: 100%;
+            background-color: #F282F4 ;
+        } */
+        .row > div {
+            width: 250px;
+            height: 250px;
+            background-color: burlywood;
+            border: 1.5px solid greenyellow;
+            /* margin: 5px; */
+        }
+        /* @media screen and (max-width: 1080) {
+            .row > div {
+                width: 100%;
+            }
+        } */
+        @media screen and (min-width: 600px) {
+            .container {
+                /* grid-template-columns: auto auto; */
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .row > .item3 {
+                /* grid-template-columns: auto auto; */
+                /* grid-column: 1/2; */
+            }
+        }
+    </style> -->
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 20px;
+            background-color: indianred;
+            border: 1px solid burlywood;
+            margin: 5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* On screens that are 992px wide or less, go from four columns to two columns */
+        @media screen and (max-width: 992px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <div class="row">
+            <div class="column">column</div>
+            <div class="column">column2</div>
+            <div class="column">column3</div>
+            <div class="column">column</div>
+            <div class="column">column5</div>
+            <div class="column">column</div>
+            <div class="column">column</div>
+            <div class="column">column</div>
+            <div class="column">column</div>
+            <div class="column">column</div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>

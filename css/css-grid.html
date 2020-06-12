@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body {
+            /* background-color: darkgray; */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: 200px 200px 200px 200px 200px;
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: right; */
+            /* justify-content: unsafe; */
+            /* justify-content: stretch; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            grid-gap: 10px;
+            /* align-items: center; */
+            /* align-items: baseline; */
+            /* align-items: flex-end; */
+            align-items: stretch;
+            background-color: rgb(168, 161, 168);
+        }
+        .container > div {
+            background-color: darkkhaki;
+            text-align: center;
+            padding: 0px 0px 0px 0px;
+        }
+        .item1 {
+            /* grid-row: 4 / 1; */
+            grid-area:  1/1/2/6;
+        }
+        .item2 {
+            grid-area: 2/span 1 ;
+        }
+        .item3, .item4, .item5 {
+            grid-area: 2/span 2 ;
+        }
+        .item6, .item7, .item8 {
+            grid-area: 3/span 1 ;
+        }
+
+
+
+        .grid {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-rows: [header-start] 20vh [header-end] ;
+            grid-template-columns: [full-start sidebar-start] 1fr 2fr [sidebar-end main-start] 1fr 2fr 1fr 2fr [main-end full-end];
+        }
+
+        .header {
+            grid-row: header-start;
+            grid-column: full-start / full-end;
+        }
+
+        .sidebar {
+            grid-row: 2;
+            grid-column: sidebar-start / sidebar-end;
+        }
+
+        .content {
+            grid-row: 2;
+            grid-column: main-start / main-end;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="row"> -->
+            <div class="item1">header</div>
+            <div class="item2">div 2</div>
+            <div class="item3">div 3</div>
+            <div class="item4">div 4</div>
+            <div class="item5">div 5</div>
+            <div class="item6">div 6</div>
+            <div class="item7">div 7</div>
+            <div class="item8">div 8</div>
+            <div class="item9">div 9</div>
+            <div class="item10">div 10</div>
+        <!-- </div> -->
+    </div>
+
+
+
+    <!-- <hr>
+    <div class="grid">grid</div>
+    <div class="header">header</div>
+    <div class="sidebar">sidebar</div>
+    <div class="content">content</div> -->
+</body>
+</html>

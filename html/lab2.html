@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>2.ให้หาความเหมือนและความแตกต่างระหว่าง 2 tag ที่กำหนดให้</h4>
+        <p>2.1 < hr > & < br > </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+        <p>2.2 < ul > & < ol ></p>
+            <ul start="20">
+                <li>aa</li>
+                <li>aa</li>
+                <li>aa</li>
+                <li>aa</li>
+                <li>aa</li>
+            </ul>
+            <ul reversed="reversed">
+                <li>aa</li>
+                <li>aa</li>
+                <li>aa</li>
+                <li>aa</li>
+                <li>aa</li>
+            </ul>
+
+            <ol>
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+            </ol><ol start="20">
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+            </ol>
+            <ol reversed="reversed">
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+                <li>bb</li>
+            </ol>
+            <p> ******ul จะไม่สามารถใส่ attribute อะไรได้เลย ส่วน ol มี attribute ให้เลือกเล่นได้หลายอย่าง (ตามความคิดผมนะครับ)</p>
+            <hr>
+        <p>2.3 < select > & < checkbox > & < radio button</p>
+            <p>ไม่ใส่ form</p>
+            <p>select </p>
+            <select name="" id="">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi" selected>Audi</option>  
+            </select>
+            <select name="" id="" disabled="disabled">
+                <option value="volvo">Volvo</option>
+            </select>
+            <p>checkbox</p>
+            <input type="checkbox" name="test" value="Bike">
+            <label for="test">banana</label>
+            <input type="checkbox" name="test1" value="Bike">
+            <label for="test1">apple</label>
+            <input type="checkbox" name="test2" value="Bike">
+            <label for="test2">coconut</label>
+
+            <p>radio</p>
+            <input type="radio" name="test" value="Bike">
+            <label for="test">banana</label><br>
+            <input type="radio" name="test" value="Bike">
+            <label for="test1">apple</label><br>
+            <input type="radio" name="test" value="Bike">
+            <label for="test2">coconut</label><br>
+            <hr>
+            <form action="/">
+                <p>select </p>
+                <select name="" id="">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi" selected>Audi</option>  
+                </select>
+                <select name="" id="" disabled="disabled">
+                    <option value="volvo">Volvo</option>
+                </select>
+                <p>checkbox</p>
+                <input type="checkbox" id="test11" name="test11" value="test11">
+                <label for="test11">banana</label>
+                <input type="checkbox" id="test12" name="test11" value="test12">
+                <label for="test12">apple</label>
+                <input type="checkbox" id="test13" name="test11" value="test13">
+                <label for="test13">coconut</label>
+                
+                <p>radio</p>
+                
+                <input type="radio" id="banana" name="fruit" value="banana">
+                <label for="banana">banana</label><br>
+
+                <input type="radio" id="apple" name="fruit" value="apple">
+                <label for="apple">apple</label><br>
+
+                <input type="radio" id="coconut" name="fruit" value="coconut">
+                <label for="coconut">coconut</label><br>
+                    <hr>
+            </form>
+
+            <p>**** select เป็น dropdowe เลือกได้อย่างแค่1อย่าง  </p>
+            <p>**** checkbox สามารถเลือกได้หลายอย่างหรือ1อย่างก็ได้  </p>
+            <p>**** radio ปกติต้องเลือกได้อย่างเดียว แต่ถ้า attribute name ต่างกันก็สามารถเลือกได้หลายอัน  </p>
+            <hr>
+        <p>2.4 < div > & < span > </p>    
+            <div>test div,</div><div>test div,</div><div>test div,</div><div>test div,</div>
+            <span>test span, </span><span>test span, </span> <span>test span, </span> <span>test span, </span>
+
+            <p>**** div จะเป็น box ข้อความมันจะไม่ต่อกัน</p>
+            <p>**** span ข้อความจะต่อกันในบันทัดเดียว</p>
+            <hr>
+        <p> 2.4 < "script" > "&" < "style" > </p>
+            <script>เป็น tag  ของ javascript </script>
+            <style>เป็น tag ของ css </style>
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        div > div {
+           width: 300px;
+           height: 250px; 
+           background-color: burlywood;
+           border: 1.5px solid #16EE0F;
+        }
+        .relative > .item2 {
+            position: relative;
+            top: -50px;
+            bottom: 200px;
+            right: 200px;
+            left: 280px;
+        }
+        .absolute > .item1 {
+            position: absolute;
+            top: 50px;
+            bottom: 200px;
+            right: 200px;
+            left: 780px;
+        }
+        .flexd > .item2{
+            position: fixed;
+            top: 0px;
+            /* bottom: 00px; */
+            right: 00px;
+            left: 500px;
+        }
+        .sticky > .item1 {
+            position: sticky;
+            /* bottom: 0; */
+            top: 0;
+            left: 958px;
+            z-index: 1;
+        }
+        .sticky > div {
+            position: relative;
+            /* bottom: 0; */
+            /* top: 0; */
+            left: 950px;
+            /* right: 700px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="relative">
+        <div class="item1">
+            <h1>relative 1</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat adipisci cum dolore odit obcaecati dolor cupiditate necessitatibus doloremque, incidunt nam accusamus labore totam corrupti est ad possimus placeat quis dolorum!
+        </div>
+        <div class="item2">
+            <h1>relative 2</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id a tempora illum obcaecati autem, doloribus cum quo. Soluta, sequi. Voluptatem soluta dolorum necessitatibus rem saepe officiis omnis eum quia cum.</div>
+        <div class="item3">
+            <h1>relative 3</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni exercitationem ipsum voluptatum nostrum officia. Sequi accusantium aut nulla sapiente veniam explicabo soluta iure odio, sint consectetur, fugiat magni quas molestiae?</div>
+        <div class="item4">
+            <h1>relative 4</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis, obcaecati aperiam facilis incidunt, quisquam perferendis maiores labore praesentium, quas earum laboriosam culpa impedit ducimus voluptates tempora odit aliquid quia.
+        </div>
+    </div>
+    <hr>
+    
+    <div class="absolute">
+        <div class="item1">
+            <h1>absolute 1</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat adipisci cum dolore odit obcaecati dolor cupiditate necessitatibus doloremque, incidunt nam accusamus labore totam corrupti est ad possimus placeat quis dolorum!
+        </div>
+        <div class="item2">
+            <h1>absolute 2</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id a tempora illum obcaecati autem, doloribus cum quo. Soluta, sequi. Voluptatem soluta dolorum necessitatibus rem saepe officiis omnis eum quia cum.</div>
+        <div class="item3">
+            <h1>absolute 3</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni exercitationem ipsum voluptatum nostrum officia. Sequi accusantium aut nulla sapiente veniam explicabo soluta iure odio, sint consectetur, fugiat magni quas molestiae?</div>
+        <div class="item4">
+            <h1>absolute 4</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis, obcaecati aperiam facilis incidunt, quisquam perferendis maiores labore praesentium, quas earum laboriosam culpa impedit ducimus voluptates tempora odit aliquid quia.
+        </div>
+    </div>
+    <hr>
+    
+    <div class="flexd">
+        <div class="item1">
+            <h1>flexd 1</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat adipisci cum dolore odit obcaecati dolor cupiditate necessitatibus doloremque, incidunt nam accusamus labore totam corrupti est ad possimus placeat quis dolorum!
+        </div>
+        <div class="item2">
+            <h1>flexd 2</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id a tempora illum obcaecati autem, doloribus cum quo. Soluta, sequi. Voluptatem soluta dolorum necessitatibus rem saepe officiis omnis eum quia cum.
+        </div>
+        <!-- <div class="item3">
+            <h1>flexd 3</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni exercitationem ipsum voluptatum nostrum officia. Sequi accusantium aut nulla sapiente veniam explicabo soluta iure odio, sint consectetur, fugiat magni quas molestiae?
+        </div> -->
+        <!-- <div class="item4">
+            <h1>flexd 4</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis, obcaecati aperiam facilis incidunt, quisquam perferendis maiores labore praesentium, quas earum laboriosam culpa impedit ducimus voluptates tempora odit aliquid quia.
+        </div> -->
+    </div>
+    <hr>
+    
+    <div class="sticky">
+        <div class="item1">
+            <h1>sticky 1</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat adipisci cum dolore odit obcaecati dolor cupiditate necessitatibus doloremque, incidunt nam accusamus labore totam corrupti est ad possimus placeat quis dolorum!
+        </div>
+        <div class="item2">
+            <h1>sticky 2</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id a tempora illum obcaecati autem, doloribus cum quo. Soluta, sequi. Voluptatem soluta dolorum necessitatibus rem saepe officiis omnis eum quia cum.</div>
+        <div class="item3">
+            <h1>sticky 3</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni exercitationem ipsum voluptatum nostrum officia. Sequi accusantium aut nulla sapiente veniam explicabo soluta iure odio, sint consectetur, fugiat magni quas molestiae?</div>
+        <div class="item4">
+            <h1>sticky 4</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis, obcaecati aperiam facilis incidunt, quisquam perferendis maiores labore praesentium, quas earum laboriosam culpa impedit ducimus voluptates tempora odit aliquid quia.
+        </div>
+        <div class="item5">
+            <h1>sticky 5</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat adipisci cum dolore odit obcaecati dolor cupiditate necessitatibus doloremque, incidunt nam accusamus labore totam corrupti est ad possimus placeat quis dolorum!
+        </div>
+        <div class="item6">
+            <h1>sticky 6</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id a tempora illum obcaecati autem, doloribus cum quo. Soluta, sequi. Voluptatem soluta dolorum necessitatibus rem saepe officiis omnis eum quia cum.</div>
+        <div class="item7">
+            <h1>sticky 7</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni exercitationem ipsum voluptatum nostrum officia. Sequi accusantium aut nulla sapiente veniam explicabo soluta iure odio, sint consectetur, fugiat magni quas molestiae?</div>
+        <div class="item8">
+            <h1>sticky 8</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis, obcaecati aperiam facilis incidunt, quisquam perferendis maiores labore praesentium, quas earum laboriosam culpa impedit ducimus voluptates tempora odit aliquid quia.
+        </div>
+    </div>
+</body>
+</html>
